@@ -45,7 +45,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\script\box_trigger.cs" />
+     <Compile Include="Assets\script\btnController.cs" />
      <Compile Include="Assets\script\player_controller.cs" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{CA2108DF-F710-96CD-1C51-BB46F4E0F0FE}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
