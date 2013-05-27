@@ -16,6 +16,6 @@ public class btnController : MonoBehaviour {
     void OnGUI()
     {
         GUI.skin = skin;
-        if (GUI.Button(rect, "")) print("box");
+        if (GUI.Button(rect, "box")) print("box");
     }
 }
