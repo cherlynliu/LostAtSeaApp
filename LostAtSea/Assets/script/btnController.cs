@@ -3,7 +3,8 @@ using System.Collections;
 
 public class btnController : MonoBehaviour {
     public GUISkin skin;
-    Rect rect = new Rect(0, 0, 100, 100);
+    Rect btn_rect = new Rect(0, 0, 100, 100);
+    Rect bag_rect = new Rect(0, 100, 256, 256);
 	// Use this for initialization
 	void Start () {
 	
@@ -16,6 +17,11 @@ public class btnController : MonoBehaviour {
     void OnGUI()
     {
         GUI.skin = skin;
-        if (GUI.Button(rect, "box")) print("box");
+        //GUI.Label(bag_rect, skin.label.normal.background);
+        if (GUI.Button(btn_rect, "box"))
+        {
+            print("box :  you have food*" + boxController.objectsInBag[0] + ", bottle*" + boxController.objectsInBag[1] + ", bottle with message*" + boxController.objectsInBag[2]);
+            //GUI.Label(bag_rect, skin.label.normal.background);
+        }
     }
 }
